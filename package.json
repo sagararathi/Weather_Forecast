@@ -1,0 +1,11 @@
+{
+  "name": "weather-app",
+  "description": "weather forcast app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.12.1"
+  }
+}
