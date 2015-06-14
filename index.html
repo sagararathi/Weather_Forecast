@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forcast</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/weatherApp.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="nav navbar-brand logo">Weather Forecast</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right logo">
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div ng-view></div>
+  </div>
+  <!-- Angular Framework -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/angular-resource.min.js"></script>
+<!-- Angular Module -->
+<script type="text/javascript" src="app/app.js"></script>
+<!-- Application Route config -->
+<script type="text/javascript" src="app/services/route.js"></script>
+<!-- Appplication Service -->
+<script type="text/javascript" src="app/services/weatherService.js"></script>
+<!-- Application Directives -->
+<script type="text/javascript" src="app/directives/weatherDirctives.js"></script>
+<!-- Angular Controllers -->
+<script type="text/javascript" src="app/controllers/mainCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/forecastCtrl.js"></script>
+</body>
+</html>
