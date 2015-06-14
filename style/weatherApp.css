@@ -1,0 +1,20 @@
+html, body, input, select, textarea{
+      font-size: 1.05em !important;
+    }
+
+td{
+  padding-right: 10px;
+}
+
+body{
+  background: url(http://icons.wxug.com/data/wximagenew/t/tamcat/638-awesome.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.logo{
+  color: black;
+}
