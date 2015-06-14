@@ -1,0 +1,22 @@
+<span style="padding-left:15px;">Forecast for {{ city | uppercase}}</span>
+
+<div ng-repeat="day in weatherResult.list">
+  <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{ convertToDate(day.dt) | date }}</h3>
+      </div>
+      <div class="panel-body">
+        <table>
+          <tr>
+            <td> {{ day.temp.day}} &#8457</td>
+            <td>Min {{ day.temp.min}} &#8457</td>
+            <td>Max {{ day.temp.max}} &#8457 |</td>
+            <td>{{ day.weather[0].description | uppercase }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
