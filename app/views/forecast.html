@@ -9,9 +9,9 @@
       <div class="panel-body">
         <table>
           <tr>
-            <td> {{ day.temp.day}} &#8457</td>
-            <td>Min {{ day.temp.min}} &#8457</td>
-            <td>Max {{ day.temp.max}} &#8457 |</td>
+            <td> {{ day.temp.day}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units==='metric'">&#8451</span></td>
+            <td>Min {{ day.temp.min}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units==='metric'">&#8451</span></td>
+            <td>Max {{ day.temp.max}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units=='metric'">&#8451</span> |</td>
             <td>{{ day.weather[0].description | uppercase }}</td>
           </tr>
         </table>
