@@ -1,4 +1,4 @@
-<span style="padding-left:15px;">Forecast for {{ city | uppercase}}</span>
+<span style=" padding:10px; padding-left:15px;">Forecast for {{ city | uppercase}}</span> <span style="float:right; padding:10px;">version: {{ appSetting.version }}</span>
 
 <div ng-repeat="day in weatherResult.list">
   <div class="col-md-12">
@@ -19,4 +19,5 @@
     </div>
   </div>
 </div>
+
 
