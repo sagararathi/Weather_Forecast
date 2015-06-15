@@ -1,7 +1,9 @@
-weatherApp.controller('forecastCtrl',['$scope', '$resource', '$log','weatherService', function($scope, $resource, $log,weatherService){
+weatherApp.controller('forecastCtrl',['$scope', '$resource', '$log','weatherService','appSetting', function($scope, $resource, $log,weatherService, appSetting){
 
   $scope.city = weatherService.city;
   $scope.days = weatherService.days;
+
+  $scope.appSetting = appSetting;
 
   $scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily", { callback: "JSON_CALLBACK"}, {get: {method: "JSONP"}});
 
