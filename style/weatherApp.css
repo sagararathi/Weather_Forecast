@@ -2,6 +2,10 @@ html, body, input, select, textarea{
       font-size: 1.05em !important;
     }
 
+img {
+  padding: 0;
+}
+
 td{
   padding-right: 10px;
 }
@@ -17,4 +21,9 @@ body{
 
 .logo{
   color: black;
+}
+
+hr{
+  border: 1px solid transparent;
+    height: 0px;
 }
