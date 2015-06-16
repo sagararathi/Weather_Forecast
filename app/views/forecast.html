@@ -1,7 +1,7 @@
 <span style=" padding:10px; padding-left:15px;">Forecast for {{ city | uppercase}}</span> <span style="float:right; padding:10px;">version: {{ appSetting.version }}</span>
-
+<hr>
 <div ng-repeat="day in weatherResult.list">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title">{{ convertToDate(day.dt) | date }}</h3>
@@ -11,8 +11,9 @@
           <tr>
             <td> {{ day.temp.day}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units==='metric'">&#8451</span></td>
             <td>Min {{ day.temp.min}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units==='metric'">&#8451</span></td>
-            <td>Max {{ day.temp.max}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units=='metric'">&#8451</span> |</td>
+            <td>Max {{ day.temp.max}} <span ng-if="units==='imperial'">&#8457</span><span ng-if="units=='metric'">&#8451</span></td>
             <td>{{ day.weather[0].description | uppercase }}</td>
+            <td><img ng-src='images/{{ day.weather[0].icon }}.png'/></td>
           </tr>
         </table>
       </div>
