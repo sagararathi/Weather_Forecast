@@ -24,6 +24,6 @@ body{
 }
 
 hr{
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
     height: 0px;
 }
